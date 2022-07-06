@@ -1,5 +1,6 @@
 import './App.css';
 import {Header} from "./Components/Header/Header";
+import SearchBar from './Components/SearchBar/SearchBar';
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import MD5 from "crypto-js/md5";
@@ -31,6 +32,7 @@ function App() {
   return (
     <div className="container">
       <Header/>
+      <SearchBar/>
       <CharInfoCard/>
     </div>
   );
