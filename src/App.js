@@ -2,12 +2,14 @@ import './App.css';
 import {Header} from "./Components/Header/Header";
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import MD5 from "crypto-js/md5"
+import MD5 from "crypto-js/md5";
+import CharInfoCard from './Components/Header/CharacterInfoCard/CharacterCard';
+
 
 let MarvelBasicUrl = "http://gateway.marvel.com"
 let baseUrl = `${MarvelBasicUrl}/v1/public/characters`
-let privateKey = "e628d2c69acb9a2c79419d570c0b7e7c5a51134a"
-let publicKey = "ee11e0020252facff7de0487eee802fd"
+let privateKey = "ddf7ad07b573516238025d35fa5b337eff6db2f9"
+let publicKey = "1e6ccb930160f34a831d5518f1b123c7"
 let ts = Date.now().toString()
 const getHash = (ts, privateKey, publicKey) => {
     return MD5(ts + privateKey + publicKey).toString()
@@ -29,6 +31,7 @@ function App() {
   return (
     <div className="container">
       <Header/>
+      <CharInfoCard/>
     </div>
   );
 }
