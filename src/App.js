@@ -9,7 +9,7 @@ import CharInfoCard from './Components/Header/CharacterInfoCard/CharacterCard';
 let MarvelBasicUrl = "http://gateway.marvel.com"
 let baseUrl = `${MarvelBasicUrl}/v1/public/characters`
 let privateKey = "ddf7ad07b573516238025d35fa5b337eff6db2f9"
-let publicKey = "1e6ccb930160f34a831d5518f1b123c7"
+let publicKey = "2f7d81c2c80d2cd3a4a8658468485410"
 let ts = Date.now().toString()
 const getHash = (ts, privateKey, publicKey) => {
     return MD5(ts + privateKey + publicKey).toString()
@@ -31,7 +31,9 @@ function App() {
   return (
     <div className="container">
       <Header/>
+      <div className="cardsCont">
       <CharInfoCard/>
+      </div>
     </div>
   );
 }

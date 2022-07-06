@@ -1,9 +1,8 @@
 .headerStyle{
     height: 80px;
     width: 100%;
-    background-color: #918b79f7;
 }
 .logoImage{
-    height: 40px;
+    margin-top: 20px;
+    height: 60px;
 }
-
