@@ -6,19 +6,11 @@
 
 html,
 body {
-  background: rgba(70, 104, 204, 0.71) no-repeat center center/cover;
-  height: 100vh;
-}
-.container {
-  margin: auto;
-  padding: 0 20px;
-}
-header {
-  height: 200px;
-}
-
-header img {
-  width: 200px;
+  background-image:url("img/background-img.jpeg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .center {
