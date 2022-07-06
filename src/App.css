@@ -9,8 +9,14 @@ body {
   background-image:url("img/background-img.jpeg");
   min-height: 100vh;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {

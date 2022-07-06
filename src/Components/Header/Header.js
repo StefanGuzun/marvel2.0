@@ -6,7 +6,7 @@ export const Header = () => {
 
     return(
         <div>
-            <div className="headerStyle">
+            <div className="headerStyle center">
                 <img src={logo} alt="marvel-logo" className="logoImage"/>
             </div>
         </div>
