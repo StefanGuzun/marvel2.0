@@ -1,7 +1,7 @@
 import{BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import Home from"./routes/Home";
 import NavBar from "./components/NavBar";
-import HeroDetails from "./routes/HeroDetails";
+import HeroDetails from "./routes/HeroDetails/HeroDetails";
 
 function App(){
   return(
