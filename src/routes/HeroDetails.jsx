@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
-import {fetchHero} from "/src/utils/utils";
+import {fetchHero} from "../utils/utils";
 
 export default function HeroDetails (){
     let { id } = useParams()

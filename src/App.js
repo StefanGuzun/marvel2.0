@@ -5,6 +5,7 @@ import {BrowserRouter as Routes, Route, Router} from "react-router-dom";
 import Homes from "./routes/Homes";
 import NavBar from './components/NavBar'; 
 import Footer from "./components/Footer"
+ad852516e39826e2cda9cdb13ded8259d
 
 
 function App() {
@@ -16,7 +17,6 @@ function App() {
                   <Route path ={"/"} element={<Homes/>}/>
                   <Route path ={"/:id"} element={<HeroDetails/>}/>
               </Routes>
-          <Footer/>
       </Router>
     </div>
   );
