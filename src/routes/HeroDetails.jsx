@@ -5,7 +5,7 @@ import {fetchHero} from "/src/utils/utils";
 export default function HeroDetails (){
     let { id } = useParams()
 
-    const [hero, setHero] => useState();
+    const [hero, setHero] = useState();
 
     useEffect(()=>{
         fetchHero(id)
@@ -30,7 +30,7 @@ export default function HeroDetails (){
                         <h4>Series</h4>
                         <ul>
                             {hero.series.items.map((s) => (
-                                <li key={Math.random() * 1000}>{s.name}</li>)
+                                <li key={Math.random() * 1000}>{s.name}</li>))
                             }
                         </ul>
                     </div>
