@@ -17,25 +17,25 @@ export default function HeroDetails() {
   if (!hero) return
   return (
     <div  className="container">
-      <di className="hero__detailsCont">
+      <div style={{display: "flex"}}>
         <img src={`${hero.thumbnail.path}.${hero.thumbnail.extension}`} className="imageStyle"/>
-        <div style={{display: "flex", flexDirection: "column"}} className="heroDetails">
-          <h4 className="title">Name:</h4>
-          <p className="content">{hero.name}</p>
+        <div style={{display: "flex",flexDirection: "column",backgroundColor:"white",height: 500, borderRadius: 5,}} className="heroDetails">
+          <h4 className="titles">Name:</h4>
+          <p className="contentSize">{hero.name}</p>
           {hero.description ? (<>
-          <h4 className="title">Description:</h4>
-          <p className="content">{hero.description}</p>
+          <h4 className="titles">Description:</h4>
+          <p className="contentSize">{hero.description}</p>
           </>): null}
           <div className="heroSeries">
-            <h4 className="title">Series:</h4>
-            <ul className="listBox">
+            <h4 className="titles">Series:</h4>
+            <ul style={{overflowY: "scroll", height: "25%", margin:"0 40px"}}>
               {
                 hero.series.items.map(item => <li key={Math.random() * 1000} className="listStyle">{item.name}</li>)
               }
             </ul>
           </div>
         </div>
-      </di>
+      </div>
     </div>
   )
 }

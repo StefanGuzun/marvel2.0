@@ -18,8 +18,8 @@ export default function SearchBar({ setter }) {
     }
 
   return(
-    <form className="searchBox" style={{display: "flex", justifyContent: "center"}}>
-      <input className="searchBarInput" type="text" placeholder="Search Characters" ref={input}/>
+    <form className="searchBox">
+      <input className="searchBarInput" placeholder="Search Characters" ref={input}/>
         <button className="searchButton" onClick={handleClick}>
           <span class="material-symbols-outlined">
             search

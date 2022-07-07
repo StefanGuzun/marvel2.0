@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <Container>
-      <h1>Discover Marvel Hero</h1>
+      <h1 style={{color: "white"}}>Discover Marvel Hero</h1>
       <SearchBar setter={setHeroes}/>
       <Grid>
         {cards ? cards : ""}

@@ -10,7 +10,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("/src/img/ComicsBackground.jpg");
+  background-image: url("/src/img/marvelgg.png");
+  background-color: #810d00;
 }
 
 .center {
@@ -28,8 +29,4 @@ body {
 
 .cardsCont{
   margin-top: 100px;
-}
-
-.home-page{
-  background-color: rgb(188, 40, 40);
 }
