@@ -4,9 +4,7 @@ import HeroDetails from "./routes/HeroDetails";
 import {BrowserRouter as Routes, Route, Router} from "react-router-dom";
 import Homes from "./routes/Homes";
 import NavBar from './components/NavBar'; 
-import Footer from "./components/Footer"
-ad852516e39826e2cda9cdb13ded8259d
-
+import Footer from "./components/Footer"                        
 
 function App() {
   return (
