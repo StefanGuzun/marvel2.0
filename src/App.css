@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: url("/src/img/ComicsBackground.jpg");
 }
 
 .center {
@@ -24,6 +25,11 @@ body {
   height: 300px;
   perspective: 1000px;
 }
+
 .cardsCont{
   margin-top: 100px;
+}
+
+.home-page{
+  background-color: rgb(188, 40, 40);
 }
