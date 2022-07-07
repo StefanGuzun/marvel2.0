@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
-.characterGrid{ 
+.grid{ 
     display: flex; 
     width: 900px;
     flex-wrap: wrap;
