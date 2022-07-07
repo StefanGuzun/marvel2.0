@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+.characterGrid{ 
+    display: flex; 
+    width: 900px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-size: 815px ;
+    font-family: 'Yatra One', cursive;
+    
+}
