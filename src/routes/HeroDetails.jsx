@@ -9,9 +9,9 @@ export default function HeroDetails() {
 
   useEffect(() => {
     fetchHero(id)
-    .then(data => setHero(data[0]))
-    .catch(err => console.log(err))
-  })
+    .then((data) => setHero(data[0]))
+    .catch((err) => console.error(err))
+  }, []);
 
   if (!hero) return
   return (
