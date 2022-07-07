@@ -1,41 +1,40 @@
-import React, {useEffect, useState} from "react";
-import {useParams} from "react-router-dom";
-import {fetchHero} from "../utils/utils";
+import React, {useState, useEffect} from 'react'
+import { useParams } from "react-router-dom"
+import { fetchHero } from '../utils/utils';
 
-export default function HeroDetails (){
-    let { id } = useParams()
+export default function HeroDetails() {
+  let {id} = useParams();
 
-    const [hero, setHero] = useState();
+  const [hero, setHero] = useState()
 
-    useEffect(()=>{
-        fetchHero(id)
-            .then((data) => setHero(data[0]))
-            .catch((err) => console.log(err))
-    }, [])
-    if (!hero) return;
-    return (
-        <div className="container large">
-            <div style={{backgroundColor: "antiquewhite", display: "flex",}} className="hero__details-container">
-                <img src={`${hero.thumbnail.path}.${hero.thumbnail.extension}`} alt="hero-image"/>
-                <div className="hero__details">
-                    <h4>Name</h4>
-                    <p>{hero.name}</p>
-                    {hero.description ? (
-                        <div>
-                            <h4>Description</h4>
-                            <p>{hero.description}</p>
-                        </div>
-                    ) : null}
-                    <div className="hero__series">
-                        <h4>Series</h4>
-                        <ul>
-                            {hero.series.items.map((s) => (
-                                <li key={Math.random() * 1000}>{s.name}</li>))
-                            }
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  useEffect(() => {
+    fetchHero(id)
+    .then((data) => setHero(data[0]))
+    .catch((err) => console.error(err))
+  }, []);
+
+  if (!hero) return
+  return (
+    <div  className="container">
+      <div style={{backgroundColor: "antiquewhite", display: "flex", }} className="hero__detailsCont">
+        <img style={{width: 500, height: 500}} src={`${hero.thumbnail.path}.${hero.thumbnail.extension}`}/>
+        <div style={{display: "flex", flexDirection: "column"}} className="heroDetails">
+          <h4>Name:</h4>
+          <p>{hero.name}</p>
+          {hero.description ? (<>
+          <h4>description:</h4>
+          <p>{hero.description}</p>
+          </>): null}
+          <div className="heroSeries">
+            <h4>series:</h4>
+            <ul>
+              {
+                hero.series.items.map(item => <li key={Math.random() * 1000}>{item.name}</li>)
+              }
+            </ul>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  )
 }

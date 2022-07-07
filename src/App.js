@@ -1,23 +1,18 @@
-import './App.css';
-import React from "react";
+import{BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import Home from"./routes/Home";
+import NavBar from "./components/NavBar";
 import HeroDetails from "./routes/HeroDetails";
-import {BrowserRouter as Routes, Route, Router} from "react-router-dom";
-import Homes from "./routes/Homes";
-import NavBar from './components/NavBar'; 
-import Footer from "./components/Footer"                        
 
-function App() {
-  return (
-    <div className="container">
-      <Router>
-          <NavBar/>
-              <Routes>
-                  <Route path ={"/"} element={<Homes/>}/>
-                  <Route path ={"/:id"} element={<HeroDetails/>}/>
-              </Routes>
-      </Router>
-    </div>
-  );
-}
+function App(){
+  return(
+   <Router>
+    <NavBar/>
+      <Routes>
+        <Route path={'/'} element={<Home/>}/>
+        <Route path={"/:id"} element={<HeroDetails/>}/>
+      </Routes>
+   </Router>
+   );
+  }
 
 export default App;
