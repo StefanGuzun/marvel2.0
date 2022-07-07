@@ -3,6 +3,8 @@ import React from "react";
 import HeroDetails from "./routes/HeroDetails";
 import {BrowserRouter as Routes, Route, Router} from "react-router-dom";
 import Homes from "./routes/Homes";
+import NavBar from "./components/NavBar";
+
 
 function App() {
   return (
@@ -13,7 +15,6 @@ function App() {
                   <Route path ={"/"} element={<Homes/>}/>
                   <Route path ={"/:id"} element={<HeroDetails/>}/>
               </Routes>
-          <Footer/>
       </Router>
     </div>
   );
