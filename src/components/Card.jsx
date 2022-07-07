@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Card({id, thumbnail, name}) {
   return (
-    <Link to={`/${id}`} target>
+    <Link to={`/${id}`}>
     <div className='card'>
         <img src={thumbnail} alt="hero image" />
         <h1 className='card-name'>{name}</h1>
