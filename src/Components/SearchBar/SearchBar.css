@@ -1,4 +1,6 @@
 .search {
+    position: relative;
+    left: 600px;
     display: flex;
     flex-direction: row;
     width: 350px;
@@ -8,7 +10,7 @@
 
 .searchBar {
     font-size: x-large;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Josefin Sans', sans-serif;
     background-image: url(../../img/EUstp_6X0AMWC1v.jpg);
     width: 250px;
     height: 100%;
@@ -17,7 +19,7 @@
     border: 0;
     outline: none;
     color: white;
-    text-shadow: 0 0 6px black;
+    text-shadow: 0 0 7px black;
 
     }
     .searchBar::placeholder {
@@ -28,7 +30,7 @@
         text-shadow: 0 0 6px black;
       }
       .searchBar:focus {
-        opacity: 0.5;
+        background-image: url(../../img/EUstp_6X0AMWC2v.jpg);
     }
 
 .searchButton {
@@ -36,7 +38,7 @@
     justify-content: center;
     align-items: center;
     font-size: x-large;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     width: 50px;
     height: 100%;
