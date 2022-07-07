@@ -25,3 +25,6 @@ body {
   height: 300px;
   perspective: 1000px;
 }
+.cardsCont{
+  margin-top: 100px;
+}
