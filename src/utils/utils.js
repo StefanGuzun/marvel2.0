@@ -25,7 +25,7 @@ const fetchHeroes = async (value) => {
         return
     }
 }
-const fetchHero = (id) =>{
+const fetchHero = async (id) => {
     let baseUrl = `${API_URL}/v1/public/characters${id}`
     let ts = Date.now().toString()
     let apiKey = process.env.REACT_APP_API_KEY
@@ -34,7 +34,7 @@ const fetchHero = (id) =>{
 
     let url = `${baseUrl}?ts=${ts}?apikey=${apiKey}?hash=${hash}`
 
-    try{
+    try {
         let response = await fetch(url)
         let data = await response.json()
         console.log(data)
