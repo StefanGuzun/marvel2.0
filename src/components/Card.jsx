@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Card() {
+export default function Card({id, thumbnail, name}) {
   return (
-    <Link>
+    <Link to={`/${id}`} target>
     <div className='card'>
-        <img src="" alt="hero image" />
-
+        <img src={thumbnail} alt="hero image" />
+        <h1 className='card-name'>{name}</h1>
     </div>
     </Link>
   )
